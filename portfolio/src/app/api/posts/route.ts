@@ -1,4 +1,4 @@
-import { getAllPosts, getPostById } from '@/lib/db';
+import { getAllPosts } from '@/lib/db';
 import { sql } from '@/lib/db';
 import { NextResponse } from 'next/server';
 

@@ -10,6 +10,9 @@
     "migrate": "npx tsx  src/lib/migrate.ts"
   },
   "dependencies": {
+    "@tiptap/pm": "^3.22.5",
+    "@tiptap/react": "^3.22.5",
+    "@tiptap/starter-kit": "^3.22.5",
     "dotenv": "^17.4.2",
     "next": "16.2.4",
     "postgres": "^3.4.9",
