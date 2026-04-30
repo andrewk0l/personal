@@ -1,6 +1,7 @@
 ﻿import postgres from 'postgres';
 
-export const sql = postgres(process.env.POSTGRES_URL!);
+const connectionString = process.env.POSTGRES_URL || process.env.DATABASE_URL;
+export const sql = postgres(connectionString!);
 
 export type Post = {
     id: number;
