@@ -26,3 +26,21 @@ export async function getPostById(id: number): Promise<Post | null> {
   `;
     return posts[0] ?? null;
 }
+
+export async function getUserByEmail(email: string) {
+    const users = await sql`
+    SELECT id, email, password
+    FROM users
+    WHERE email = ${email}
+  `;
+    return users[0] ?? null;
+}
+
+export async function createUser(email: string, hashedPassword: string) {
+    const users = await sql`
+    INSERT INTO users (email, password)
+    VALUES (${email}, ${hashedPassword})
+    RETURNING id, email
+  `;
+    return users[0];
+}
