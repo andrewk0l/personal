@@ -1,6 +1,6 @@
 ﻿import postgres from 'postgres';
 
-const sql = postgres(process.env.POSTGRES_URL!);
+export const sql = postgres(process.env.POSTGRES_URL!);
 
 export type Post = {
     id: number;

@@ -17,7 +17,7 @@ export default function Header({ activePage }: { activePage: 'home' | 'blog' }) 
             {/* Masthead */}
             <div className="text-center py-4 border-b border-[var(--ink)]">
                 <div className="font-['UnifrakturMaguntia'] text-[52px] sm:text-[62px] leading-none text-[var(--ink)]">
-                    Your Name
+                    Oluwanifemi
                 </div>
                 <div className="font-['EB_Garamond'] italic text-[13px] text-[var(--ink-faint)] mt-1 tracking-[0.04em]">
                     "Building thoughtful software, one problem at a time."
